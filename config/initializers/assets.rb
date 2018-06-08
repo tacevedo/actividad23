@@ -14,16 +14,19 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'bootstrap', 
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'bootstrap', 'js')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'elegant-font')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'font-awesome', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'font-awesome', 'fonts')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'ico')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'ultimate-flat-social-icons', 'ultm-css')
 
-Rails.application.config.assets.paths <<Rails.root.join('vendor', 'assets', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
 Rails.application.config.assets.precompile +=%w( *.svg *.eot *.woff *.ttf *.woff2)
 
 Rails.application.config.assets.precompile += %w( */*.jpg)
 Rails.application.config.assets.precompile += %w( */*.png)
+Rails.application.config.assets.precompile += %w( */*/*.png)
+Rails.application.config.assets.precompile += %w( */*/*.jpg)
 # Rails.application.config.assets.precompile += %w( testimonials/*.jpg )
-Rails.application.config.assets.precompile += %w( *.jpg, *.png )
+Rails.application.config.assets.precompile += %w( *.jpg, *.png , *.gif)
 
 
 # Precompile additional assets.
